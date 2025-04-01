@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 柳書的筆記       #網頁標題
+subtitle:               #副網頁標題
+description:            #網站描述
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: orange9982239   #作者
+language: zh-tw         #語系(台灣設定為:zh-tw)
+timezone: Asia/Taipei   # 時區
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://orange9982239.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -96,9 +96,12 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/orange9982239/orange9982239.github.io.git  # 你的 GitHub 倉庫地址
+  branch: gh-pages
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
