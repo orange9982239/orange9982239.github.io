@@ -1,7 +1,14 @@
 # 如何用Hexo建置自己的Blog
 ## 簡述
-> 因為想要用來放一些公開的筆記，因此找了很多方案，最終決定使用省錢的HEXO搭配github pages，並把建置過程記錄下來。
-## 環境安裝
+* 因為想要用來放一些公開的筆記，因此找了很多方案，最終決定使用省錢的HEXO搭配github pages，並把建置過程記錄下來。
+* 這篇文檔將會記錄如何安裝環境，以及如何使用HEXO建置Blog，以及如何使用github pages來發布Blog。
+* 最終你將得到
+  * 放在github pages中的免費的Blog
+  * 可自由修改主題
+  * 新增修改文章內容
+  * Blog中全文搜索
+
+## 一、環境安裝
 ```ps1
 # 安裝git
 winget install git
@@ -12,7 +19,7 @@ winget install npm
 # 安裝nodejs
 winget install nodejs
 ```
-## HEXO建置及GIT配置
+## 二、HEXO建置及GIT配置
 ```sh
 # 初始化git
 git init
@@ -37,7 +44,7 @@ git commit -m "first commit"
 git remote add origin https://github.com/orange9982239/orange9982239.github.io.git
 git push -u origin main
 ```
-## 設定next主題及全文查詢
+## 三、設定next主題及全文查詢
 > 為了簡單搭配全文搜尋，用了NexT主題
 1. next主題
    1. 下載next主題包
@@ -64,14 +71,14 @@ git push -u origin main
     description:            #網站描述
     keywords:
     author: orange9982239    #作者
-    language: zh-tw         #語系(台灣設定為:zh-tw)
+    language: zh-TW         #語系(台灣設定為:zh-TW)
     timezone: Asia/Taipei   # 時區
     
     url: https://orange9982239.github.io
     
     theme: next             # 指定主題(themes之下資料夾名稱)
     ```
-## 測試及發佈
+## 四、測試及發佈
 1. 撰寫
    1. 再source\_posts下放MD檔案
 2. 測試
@@ -99,7 +106,7 @@ git push -u origin main
         ```ps1
         hexo deploy             # 設定完成就能下此指令發布
         ```
-   4. 確認
+   4. 確認發佈結果
       1. 設定GitHub Pages
          1. https://github.com/orange9982239/orange9982239.github.io/settings/pages
          2. 來源選擇gh-pages分支

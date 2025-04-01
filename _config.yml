@@ -8,7 +8,7 @@ subtitle:               #副網頁標題
 description:            #網站描述
 keywords:
 author: orange9982239   #作者
-language: zh-tw         #語系(台灣設定為:zh-tw)
+language: zh-TW         #語系(台灣設定為:zh-tw)
 timezone: Asia/Taipei   # 時區
 
 # URL
